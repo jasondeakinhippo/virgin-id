@@ -1,7 +1,7 @@
 {% extends "layout_virgin.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Virgin ID account | Account home
 {% endblock %}
 
 {% block beforeContent %}
@@ -21,11 +21,32 @@
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Welcome to your Virgin ID account
-      </h1>
-    </div>
-  </div>
+
+<div class="govuk-grid-row account-avatar-container">
+    <div class="account-avatar">RB</div>
+      <p class="account-avatar-label">Richard Branson</p>
+</div>
+
+<ul class="account-link-container">
+  <li class="account-link">
+    <a href="account/activity.html" role="button" draggable="false" data-module="govuk-button">Activity</a>
+  </li>
+  <li class="account-link">
+    <a href="account/account-details.html" role="button" draggable="false"data-module="govuk-button">Account details</a>
+  </li>
+  <li class="account-link">
+    <a href="account/link-accounts.html" role="button" draggable="false" data-module="govuk-button">Link accounts</a>
+  </li>
+  <li class="account-link">
+    <a href="account/promo-codes.html" role="button" draggable="false" data-module="govuk-button">Promo codes</a>
+  </li>
+  <li class="account-link">
+    <a href="account/settings.html" role="button" draggable="false" data-module="govuk-button">Settings</a>
+  </li>
+  <li class="account-link">
+    <a href="account/help.html" role="button" draggable="false" data-module="govuk-button">Help</a>
+  </li>
+</ul>
+<a class="govuk-link log-out" href="/">Log out</a>
+</a>
 {% endblock %}
