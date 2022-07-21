@@ -6,7 +6,7 @@
 
 {% block head %}
   <!--[if lte IE 8]><link hrpef="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if gt IE 8]><!--><link href="/public/stylesheets/virgin.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+  <!--[if gt IE 8]><!--><link href="/public/stylesheets/styles_virgin.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
 
   {% for stylesheetUrl in extensionConfig.stylesheets %}
     <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
@@ -14,10 +14,60 @@
 {% endblock %}
 
 {% block header %}
-<div class="govuk-grid-row">
+
+<div style="display: flex; justify-content: center; padding-top: 30px"><div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Virgin-logo.svg" alt="User icon">
   </div>
-</div>
+</div></div>
+
 {% endblock %}
-{% block footer %}{% endblock %}
+{% block footer %}
+<footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__navigation">
+      <div class="govuk-footer__section govuk-grid-column-two-thirds">
+        <ul class="govuk-footer__list govuk-footer__list--columns-2">
+          <li class="">
+            <a class="govuk-footer__link" href="#1">
+              Help
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#2">
+             Cookies
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Contact
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Privacy
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Terms and conditions
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Accessibility statement
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="govuk-footer__section govuk-grid-column-one-third">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Virgin-logo.svg" alt="User icon">
+      <p>© Virgin 2022. All rights reserved.</p>
+    </div>
+      </div>
+    </div>
+    <
+    </div>
+  </div>
+</footer>
+{% endblock %}
