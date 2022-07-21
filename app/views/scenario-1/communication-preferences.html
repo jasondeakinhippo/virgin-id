@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-row">
+      <h1 class="govuk-heading-xl">Communication Preferences</h1>
+      <p>When you sign up to Virgin ID you can choose how all connected Virgin companies contact you.</p>
+      <p>Check the boxes if you'd prefer NOT to be contacted by:</p>
+      </div>
+      <div class="govuk-grid-row">
+        <form class="form" action="/url/of/next/page" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Email
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    SMS
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Telephone
+                  </label>
+                </div>
+              </div>
+          
+            </fieldset>
+          </div>
+          <a href="terms-and-conditions" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+            Continue
+          </a>
+        </form>
+      </div>
+      <div class="govuk-grid-row">
+        <p>Need help? Contact customer support</p>
+      </div>
+      
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}

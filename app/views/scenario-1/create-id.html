@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-row">
+      <h1 class="govuk-heading-xl">Create your Virgin ID</h1>
+      <p>Enter your personal details below</p>
+      </div>
+      <div class="govuk-grid-row">
+        <form class="form" action="/url/of/next/page" method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="name-on-the-account">
+              Country*
+            </label>
+            <input class="govuk-input" id="name-on-the-account" name="name-on-the-account" type="text" spellcheck="false" autocomplete="name" placeholder="United Kingdom">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort-code">
+              First name*
+            </label>
+            <input class="govuk-input" id="sort-code" name="sort-code" type="text" spellcheck="false" aria-describedby="sort-code-hint" pattern="[0-9]*" inputmode="numeric">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="account-number">
+              Last name
+            </label>
+            <input class="govuk-input" id="account-number" name="account-number" type="text" spellcheck="false" aria-describedby="account-number-hint" pattern="[0-9]*" inputmode="numeric">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="roll-number">
+              Birthday (dd/mm/yyyy)
+            </label>
+            <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="mobile-number">
+              Mobile number
+            </label>
+            <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="roll-number">
+              Postcode
+            </label>
+            <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+          </div>
+          <a href="communication-preferences" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+            Continue
+          </a>
+        </form>
+      </div>
+      <div class="govuk-grid-row">
+        <p>Need help? Contact customer support</p>
+      </div>
+      
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}
