@@ -8,9 +8,44 @@
 @import "node_modules/govuk-frontend/govuk/settings/all";
 
 // Override the default GOV.UK Frontend font stack
-$govuk-font-family: "Barlow", "Arial", sans-serif;
+$govuk-font-family: "Barlow", sans-serif;
 
 // Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
+
+.govuk-input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.govuk-input--width-2 {
+    max-width: 3.4ex;
+}
+.govuk-input:focus {
+    outline: none;
+    outline-offset: none;
+    box-shadow: none;
+}
+.govuk-heading-xl {
+    font-style: italic;
+    color: #e10a0a;
+}
+.govuk-button {
+    background-color: rgb(225, 10, 10);
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: Barlow, sans-serif;
+    line-height: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
