@@ -1,0 +1,46 @@
+{% extends "layout_virgin.html" %}
+
+{% block pageTitle %}
+  Virgin ID account | Terms and conditions
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-xl">Terms and Conditions</h2>
+        <form class="form" action="/url/of/next/page" method="post">
+            <p>When you use Virgin ID, we use the information to make your experience better. This means sharing it with Virgin ID partners you've interacted with and getting information back from them.</p>
+            <p>Our Privacy Policy tells you more about how we collect, use, share and protect your personal information.</p>
+            <p>We use the information to make your experience better and make your experience across the Virgin ecosystem smoother.</p>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    By ticking this box you're also agreeing to the Virgin ID Terms and Conditions
+                  </label>
+          
+            </fieldset>
+
+            <a href="share-details" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+              Continue
+            </a>
+
+
+        </form>
+
+        <p>Need help? Contact customer support</p>
+      
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}
