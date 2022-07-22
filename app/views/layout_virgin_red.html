@@ -6,7 +6,7 @@
 
 {% block head %}
   <!--[if lte IE 8]><link hrpef="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if gt IE 8]><!--><link href="/public/stylesheets/styles_virgin.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+  <!--[if gt IE 8]><!--><link href="/public/stylesheets/styles_virgin_red.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
 
   {% for stylesheetUrl in extensionConfig.stylesheets %}
     <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
@@ -14,7 +14,8 @@
 {% endblock %}
 
 {% block header %}
-<div class="virgin-header virgin-red-header" style="padding-top: 0px">
+
+<div class="govuk-grid-row virgin-red-logo-container">
   <img draggable="false" src="https://images.ctfassets.net/rxqefefl3t5b/1SwGfXhLkPfi6bcVm1ZNK7/5415da84cdec2e0e653c4e8c7aff5989/Virgin-Red-logo" alt="Virgin Red logo" class="virgin-logo virgin-red-logo" style="height: 140px">
 </div>
 {% endblock %}

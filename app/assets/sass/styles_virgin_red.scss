@@ -14,98 +14,88 @@ $govuk-font-family: "Barlow", sans-serif;
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
-
-.virgin-red-header {
-    // display: flex; 
-    // justify-content: center; 
-    // padding-top: 10px;
-    display: flex; 
-    justify-content: center; 
-    padding-top: 0px;
-}
 .virgin-red-logo {
     height: 65px;
     width: auto;
+}
+.virgin-red-logo-container {
+  display: flex;
+  justify-content: center;
 }
 .virgin-red-logo {
     height: 140px;
     width: auto;
 }
-.govuk-input {
-    border-left: none;
-    border-top: none;
-    border-right: none;
-}
-.govuk-input--width-2 {
-    max-width: 3.4ex;
-    text-align: center;
-}
-.govuk-input:focus {
-    outline: none;
-    outline-offset: none;
-    box-shadow: none;
-}
-.govuk-heading-xl {
-    font-style: italic;
-    color: #e10a0a;
-}
 .govuk-button {
-    background-color: rgb(225, 10, 10);
-    color: white;
-    border: none;
-    box-shadow: none;
-    font-size: 16px;
-    font-family: Barlow, sans-serif;
-    line-height: 24px;
-    padding: 12px 24px;
-    display: inline-block;
-    border-radius: 6px;
-    text-align: center;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
+  background-color: rgb(225, 10, 10);
+  color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: Barlow, sans-serif;
+  line-height: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
-div.profile-avatar-container.govuk-grid-column-one-quarter {
-    width: 15%
+.govuk-button:hover {
+  background-color: rgb(225, 10, 10);
+  color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: Barlow, sans-serif;
+  line-height: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
-.account-avatar-container {
-    display: flex;
+.govuk-button-white {
+  background-color: white;
+  color: rgb(225, 10, 10);
+  border: 1px solid rgb(225, 10, 10);
+  box-shadow: none;
+  font-size: 16px;
+  font-family: Barlow, sans-serif;
+  line-height: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
-.account-avatar {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    font-family: "Barlow", sans-serif;
-    font-size: 30px;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 20px;
+.govuk-button-white {
+  background-color: white;
+  color: rgb(225, 10, 10);
+  border: 1px solid rgb(225, 10, 10);
+  box-shadow: none;
+  font-size: 16px;
+  font-family: Barlow, sans-serif;
+  line-height: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
-.account-avatar-label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-p.account-avatar-label {
-    margin: 0px;
-}
-.govuk-link.log-out {
-    color: #e10a0a;
-    font-weight: bold;
-    display: flex; 
-    justify-content: center
-}
-ul.account-link-container {
-    padding: 0px;
-    list-style: none;
-}
-li.account-link {
-    border-bottom: 1px solid grey;
-    padding: 15px 0px
-}
-li.account-link:first-child {
-    border-top: 1px solid grey
+
+.app-step-nav-related__link:link, .app-step-nav-header__title:link, a:link, .govuk-link:link {
+  color: rgb(225, 10, 10);
+  text-decoration: none;
 }
