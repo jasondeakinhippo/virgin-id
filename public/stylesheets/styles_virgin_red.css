@@ -7943,14 +7943,19 @@ x:-moz-any-link {
   }
 }
 
-.virgin-header {
+.virgin-red-header {
   display: flex;
   justify-content: center;
-  padding-top: 35px;
+  padding-top: 0px;
 }
 
-.virgin-logo {
+.virgin-red-logo {
   height: 65px;
+  width: auto;
+}
+
+.virgin-red-logo {
+  height: 140px;
   width: auto;
 }
 
@@ -8044,9 +8049,4 @@ li.account-link {
 
 li.account-link:first-child {
   border-top: 1px solid grey;
-}
-
-.flex {
-  display: flex;
-  align-items: top;
 }
