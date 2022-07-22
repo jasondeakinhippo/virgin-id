@@ -99,3 +99,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   color: rgb(225, 10, 10);
   text-decoration: none;
 }
+
+.app-step-nav-related__link:visited, .app-step-nav-header__title:visited, a:visited, .govuk-link:visited {
+  color: rgb(225, 10, 10);
+}
