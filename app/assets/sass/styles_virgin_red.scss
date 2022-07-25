@@ -103,3 +103,27 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 .app-step-nav-related__link:visited, .app-step-nav-header__title:visited, a:visited, .govuk-link:visited {
   color: rgb(225, 10, 10);
 }
+
+.menu-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 64px;
+  font-family: Barlow, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 4.27;
+  letter-spacing: 2px;
+  text-align: center;
+  color: rgb(29, 29, 29);
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  border-bottom: 4px solid white;
+  transition: all 250ms ease 0s;
+}
+.menu-link:hover {
+  color:rgb(225, 10, 10);
+  font-weight: bold
+}

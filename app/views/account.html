@@ -1,52 +1,172 @@
 {% extends "layout_virgin.html" %}
 
 {% block pageTitle %}
-  Virgin ID account | Account home
+  Virgin ID account | Verification code
 {% endblock %}
 
 {% block beforeContent %}
-  <!-- <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div> -->
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
 {% endblock %}
 
 {% block content %}
 
-<div class="govuk-grid-row account-avatar-container">
-    <div class="account-avatar">RB</div>
-      <p class="account-avatar-label">Richard Branson</p>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full flex-center">
+    <h1 class="govuk-heading-xl color-virgin-black">My Virgin ID</h1>
+  </div>
 </div>
 
-<ul class="account-link-container">
-  <li class="account-link">
-    <a href="account/activity.html" role="button" draggable="false" data-module="govuk-button">Activity</a>
-  </li>
-  <li class="account-link">
-    <a href="account/account-details.html" role="button" draggable="false"data-module="govuk-button">Account details</a>
-  </li>
-  <li class="account-link">
-    <a href="account/link-accounts.html" role="button" draggable="false" data-module="govuk-button">Link accounts</a>
-  </li>
-  <li class="account-link">
-    <a href="account/promo-codes.html" role="button" draggable="false" data-module="govuk-button">Promo codes</a>
-  </li>
-  <li class="account-link">
-    <a href="account/settings.html" role="button" draggable="false" data-module="govuk-button">Settings</a>
-  </li>
-  <li class="account-link">
-    <a href="account/help.html" role="button" draggable="false" data-module="govuk-button">Help</a>
-  </li>
-</ul>
-<a class="govuk-link log-out" href="/">Log out</a>
-</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half flex-col">
+    <div class="flex-row">
+        <h2 class="govuk-heading-l flex-space-between">Welcome back&nbsp<em class="color-virgin-red">Richard</em></h2></h2>
+      </div>
+      <p>Your Virgin ID: XXXX-XXXX-XXXX-XXXX</p>
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <a class="govuk-link log-out" href="/">Log out</a>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="account-section flex-center">
+        <div class="flex-col flex-center">
+          <p class="flex-center">Available balance:</p>
+          <div class="flex-row">
+            <h3 class="govuk-heading-m "><em class="color-virgin-red">344</em>&nbspVirgin points</h3>
+          </div>
+          <a class="govuk-link flex-center" href="what-is-virgin-red">How can I spend my Virgin points?</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <div class="account-section">
+        <h3 class="govuk-heading-m account-section-title">My Details</h3>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <div class="account-section">
+      <h3 class="govuk-heading-m account-section-title">My Activity</h3>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="account-section">
+        <h3 class="govuk-heading-m account-section-title">Virgin ID Security Level:&nbsp<em class="color-virgin-red">Maximum</em></h3>
+    </div>
+  </div>
+</div>
+
+<div class="full-width">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">My Virgin accounts</h2>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <div class="virgin-company-tile flex-col">
+          <div class="flex-center">
+            <img draggable="false" src="https://images.ctfassets.net/rxqefefl3t5b/1SwGfXhLkPfi6bcVm1ZNK7/5415da84cdec2e0e653c4e8c7aff5989/Virgin-Red-logo" alt="Virgin Red logo" style="height: 200px">
+          </div>
+          <div class="flex-center">
+            <a href="/" role="button" draggable="false">
+              More info
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="virgin-company-tile flex-col">
+          <div class="flex-center">
+            <img draggable="false" src="https://theme.zdassets.com/theme_assets/693244/3b527301d62e53f98c0fd8fee294d28b4cd3a681.png" alt="Virgin Trains Ticketing logo" class="" style="height: 200px">
+          </div>
+          <div class="flex-center">
+            <a href="/" role="button" draggable="false">
+              More info
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <div class="virgin-company-tile flex-col">
+          <div class="flex-center">
+            <img draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Virgin-money-view.svg/1200px-Virgin-money-view.svg.png" alt="Virgin Money logo" class="" style="height: 150px; padding: 25px">
+          </div>
+          <div class="flex-center">
+            <a href="/" role="button" draggable="false">
+              More info
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="virgin-company-tile flex-col">
+          <div class="flex-center">
+            <img draggable="false" src="https://www.connectioncapital.co.uk/media/ovhdkxmm/virgin-wines-uk_logo.png" alt="Virgin Wines logo" class="" style="height: 200px">
+          </div>
+          <div class="flex-center">
+            <a href="/" role="button" draggable="false">
+              More info
+            </a>
+          </div>
+        </div>
+          
+      </div>
+  </div>
+  <div class="flex-center">
+  <a href="/" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+    Connect new account
+  </a>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-l">Discover more from Virgin</h2>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <div class="virgin-company-tile flex-col">
+          <div class="flex-center">
+            <img draggable="false" src="https://seeklogo.com/images/V/virgin-media-logo-0D19B92264-seeklogo.com.png" alt="Virgin Media logo" style="height: 140px; padding: 32px">
+          </div>
+          <div class="flex-center">
+            <a href="/" role="button" draggable="false">
+              More info
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="virgin-company-tile flex-col">
+          <div class="flex-center">
+            <img draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Virgin_Active.svg/1200px-Virgin_Active.svg.png" alt="Virgin Active logo" class="" style="height: 140px; padding: 32px">
+          </div>
+          <div class="flex-center">
+            <a href="/" role="button" draggable="false">
+              More info
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+       <div class="flex-center">
+    <a href="/" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+      See all Virgin Companies
+    </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
 {% endblock %}

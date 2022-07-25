@@ -7943,6 +7943,21 @@ x:-moz-any-link {
   }
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 .virgin-header {
   display: flex;
   justify-content: center;
@@ -7994,59 +8009,59 @@ x:-moz-any-link {
   letter-spacing: normal;
 }
 
-div.profile-avatar-container.govuk-grid-column-one-quarter {
-  width: 15%;
+.color-virgin-red {
+  color: #e10a0a;
 }
 
-.account-avatar-container {
-  display: flex;
-}
-
-.account-avatar {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  font-family: "Barlow", sans-serif;
-  font-size: 30px;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 20px;
-}
-
-.account-avatar-label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-p.account-avatar-label {
-  margin: 0px;
+.color-virgin-black {
+  color: #1d1d1d;
 }
 
 .govuk-link.log-out {
   color: #e10a0a;
   font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-ul.account-link-container {
-  padding: 0px;
-  list-style: none;
+h3.govuk-heading-m.flex-space-between {
+  margin-bottom: 0px;
 }
 
-li.account-link {
-  border-bottom: 1px solid grey;
-  padding: 15px 0px;
+h3.govuk-heading-m.color-virgin-red {
+  margin-bottom: 0px;
 }
 
-li.account-link:first-child {
-  border-top: 1px solid grey;
+.account-section {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
 }
 
-.flex {
+h2.govuk-heading-m.account-section-title {
+  margin-bottom: 0px;
+}
+
+.full-width {
+  background-color: rgb(252, 230, 230);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.virgin-company-tile {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: white;
   display: flex;
-  align-items: top;
+  justify-content: center;
+  align-content: center;
 }
