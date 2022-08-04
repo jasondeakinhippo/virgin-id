@@ -14,6 +14,9 @@ $govuk-font-family: "Barlow", sans-serif;
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
+main#main-content.govuk-main-wrapper.govuk-main-wrapper--auto-spacing {
+  padding-top: 0px;
+}
 .govuk-header {
   background: none;
 }
@@ -121,6 +124,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   border: 10px solid #22244e;
   border-radius: 50px;
   width: 900px;
+  padding: 20px;
 }
 .vtt-menu-link {
   color: white;

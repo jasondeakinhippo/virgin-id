@@ -7943,6 +7943,10 @@ x:-moz-any-link {
   }
 }
 
+main#main-content.govuk-main-wrapper.govuk-main-wrapper--auto-spacing {
+  padding-top: 0px;
+}
+
 .govuk-header {
   background: none;
 }
@@ -8058,6 +8062,7 @@ x:-moz-any-link {
   border: 10px solid #22244e;
   border-radius: 50px;
   width: 900px;
+  padding: 20px;
 }
 
 .vtt-menu-link {

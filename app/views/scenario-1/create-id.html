@@ -31,21 +31,21 @@ Virgin ID account | Create ID
           
           <div class="govuk-form-group">
             <label class="govuk-label" for="account-number">
-              Last name
+              Last name*
             </label>
             <input class="govuk-input" id="account-number" name="account-number" type="text" spellcheck="false" aria-describedby="account-number-hint" pattern="[0-9]*" inputmode="numeric">
           </div>
           
           <div class="govuk-form-group">
             <label class="govuk-label" for="roll-number">
-              Birthday (dd/mm/yyyy)
+              Birthday (dd/mm/yyyy)*
             </label>
             <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
           </div>
           
           <div class="govuk-form-group">
             <label class="govuk-label" for="roll-number">
-              Postcode
+              Postcode*
             </label>
             <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
           </div>
@@ -84,17 +84,28 @@ Virgin ID account | Create ID
              <h2 class="govuk-heading-l">Terms and Conditions</h2>
         <form class="form" action="/url/of/next/page" method="post">
             <p>When you use Virgin ID, we use the information to make your experience better. This means sharing it with Virgin ID partners you've interacted with and getting information back from them.</p>
-            <p>Our Privacy Policy tells you more about how we collect, use, share and protect your personal information.</p>
+            <p>Our <a href="create-id">Privacy Policy</a> tells you more about how we collect, use, share and protect your personal information.</p>
             <p>We use the information to make your experience better and make your experience across the Virgin ecosystem smoother.</p>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes govuk-checkboxes-container" data-module="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    By ticking this box you're also agreeing to the Virgin ID Terms and Conditions
+                    By ticking this box you're also agreeing to the <a href="terms-and-conditions">Virgin ID Terms and Conditions</a>.
                   </label>
-          
+                  </div>
+                  </div>
+            </fieldset>
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes govuk-checkboxes-container" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Automatically create me a Virgin Red account so I can start earning points on all my Virgin purchases. Find out more about <a href="../what-is-virgin-red">Virgin Red</a>.
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
           <a href="welcome" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
