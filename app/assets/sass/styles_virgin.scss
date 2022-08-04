@@ -14,6 +14,10 @@ $govuk-font-family: "Barlow", sans-serif;
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
+main.govuk-main-wrapper {
+    padding-top: 0px;
+    padding-top: none;
+}
 .flex-row {
     display: flex;
     flex-direction: row

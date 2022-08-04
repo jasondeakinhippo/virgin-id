@@ -1,52 +1,112 @@
-{% extends "layout_virgin.html" %}
+{% extends "layout_vtt.html" %}
 
 {% block pageTitle %}
-Virgin ID account | Home
-{% endblock %}
-
-{% block beforeContent %}
-  <!-- <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div> -->
+The rewards club that revolves around you | Virgin Red
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Login user journey picker
-      </h1>
-      <p>Select the user scenario you would like to view:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="virgin-red" role="button" draggable="false" class="govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-            Scenario 1
-          </a>
-          <p>The user is signing up to a low risk Virgin company for the first time.</p>
-        </li>
-        <li>
-          <a href="virgin-red" role="button" draggable="false" class="govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-            Scenario 2
-          </a>
-          <p>The user is returning to a low risk Virgin company but signs in for the first time using their Virgin ID.</p>
-        </li>
-        <li>
-          <a href="scenario-3/virgin-wines" role="button" draggable="false" class="govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-            Scenario 3
-          </a>
-          <p>The user is returning to a low risk Virgin Company but signs in for the first time using their Virgin ID and creates a Virgin Red account in the process.</p>
-        </li>
-      </ul>
+  <div class="govuk-grid-row full-width-red">
+    <div class="govuk-grid-column-full">
+      <div class="vtt-search-bar-container">
+        <input class="govuk-input govuk-input--width-30 vtt-search-bar" id="event-name" name="event-name" type="text" placeholder="Search our Help center">
+      </div>
     </div>
   </div>
+  <div class="govuk-grid-row full-width-navy">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          <div class="vtt-menu-tile flex-col">
+            <div class="flex-center">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height=75>
+              <path d="m11 15c3 0 8 4 8 4v-16s-5 4-8 4v8zm-6 0 3 8h4l-3-8m10-1c1.657 0 3-1.343 3-3s-1.343-3-3-3m-8 11c1-6e-7 3-1 3-3m-12-5c0-3.1111 1.7912-4 4-4h5v8h-5c-2.2088 0-4-0.88889-4-4z" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="flex-center">
+              <a href="/" role="button" draggable="false" class="vtt-menu-link">
+                FAQ
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <div class="vtt-menu-tile flex-col">
+            <div class="flex-center">
+              <?xml version="1.0" encoding="UTF-8"?>
+               <svg enable-background="new 0 0 363.61 363.61" version="1.1" viewBox="0 0 363.61 363.61" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" height=75>
+              <g stroke-width="0" fill="white">
+                <path d="m329.81 159.67c-3.982-37.802-7.578-80.456-29.602-112.84-26.263-38.625-74.81-46.826-118.4-46.828-43.584-2e-3 -92.134 8.205-118.4 46.828-22.023 32.388-25.619 75.039-29.603 112.84-2.441 23.163-6.611 49.162-4.454 73.699 27.176-9.295 84.815-25.743 152.44-25.743 67.632 0 125.27 16.449 152.45 25.744 2.144-24.573-2.012-50.659-4.44-73.7zm-257.84 15.547 0.623-5.953c3.811-36.521 7.753-74.284 23.375-97.261 12.087-17.774 40.959-26.786 85.832-26.786 44.872 2e-3 73.751 9.014 85.835 26.785 15.627 22.981 19.565 60.751 23.376 97.277l0.623 5.936-219.66 2e-3z"/>
+                <path d="m33 254.11c1.662 5.989 3.882 11.805 6.821 17.365 8.598 16.263 21.879 27.767 37.533 35.884l-11.59 41.723c-1.694 6.098 1.876 12.414 7.974 14.108 6.096 1.694 12.415-1.876 14.108-7.974l10.401-37.445h6.22c25.785 7.125 54.004 8.526 77.348 8.526 23.496 0 51.782-1.357 77.603-8.526h5.944l10.401 37.445c1.408 5.072 6.015 8.396 11.035 8.395 1.015 0 2.047-0.136 3.073-0.421 6.098-1.694 9.668-8.01 7.975-14.108l-11.573-41.663c14.078-7.321 26.255-17.41 34.878-31.291 4.297-6.918 7.349-14.314 9.477-22.012-24.238-8.449-82.041-25.755-148.82-25.755-66.765 1e-3 -124.56 17.298-148.8 25.749zm84.545 31.912h-22.146c-7.996 0-14.5-6.505-14.5-14.5s6.504-14.5 14.5-14.5h22.146c7.995 0 14.5 6.505 14.5 14.5s-6.505 14.5-14.5 14.5zm128.52-29h22.146c7.995 0 14.5 6.505 14.5 14.5s-6.505 14.5-14.5 14.5h-22.146c-7.995 0-14.5-6.505-14.5-14.5 0-7.996 6.504-14.5 14.5-14.5z"/>
+              </g>
+              </svg>
+            </div>
+            <div class="flex-center">
+              <a href="/" role="button" draggable="false" class="vtt-menu-link">
+                Who are VTT?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <div class="vtt-menu-tile flex-col">
+            <div class="flex-center">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height=75>
+              <rect width="48" height="48" fill="#fff" fill-opacity=".01"/>
+              <path d="m4 25c0-6.6498 5.3962-12 12-12h28" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+              <path d="m38 7 6 6-6 6" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+              <path d="m44 23c0 6.6498-5.3962 12-12 12h-28" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+              <path d="m10 41-6-6 6-6" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+              </svg>
+            </div>
+            <div class="flex-center">
+              <a href="/" role="button" draggable="false" class="vtt-menu-link">
+                Refund request
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <div class="vtt-menu-tile flex-col">
+            <div class="flex-center">
+              <svg enable-background="new 0 0 458.94 458.94" version="1.1" viewBox="0 0 458.94 458.94" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" height=75 fill="white">
+              <path d="m458.93 229.01c-0.059-28.883-5.471-56.923-15.762-83.14v-0.301c0-76.552 0.471-73.815-1.567-82.654-5.206-22.575-23.005-40.374-45.58-45.58-8.552-1.972-5.285-1.567-82.954-1.567-27.06-10.622-55.375-15.768-83.601-15.768-27.915 0-56.261 5.036-83.601 15.768-76.874 0-74.109-0.472-82.953 1.567-22.575 5.206-40.374 23.005-45.58 45.58-2.066 8.959-1.567 6.58-1.567 82.952-10.31 26.263-15.704 54.31-15.763 83.143-0.047 29.399 5.416 57.704 15.763 84.062 0 76.628-0.498 73.995 1.567 82.952 5.206 22.575 23.005 40.375 45.58 45.58 8.546 1.971 5.306 1.567 82.652 1.567h0.301c26.112 10.251 54.326 15.768 83.601 15.768 28.237 0 56.529-5.141 83.601-15.768h0.301c76.552 0 73.813 0.471 82.654-1.567 22.575-5.206 40.374-23.005 45.58-45.58 2.065-8.956 1.567-6.606 1.567-82.654v-0.301c10.317-26.283 15.808-54.58 15.761-84.059zm-92.307-57.927c-15.094-35.323-43.447-63.676-78.77-78.77l36.898-36.898c33.145 18.218 60.552 45.625 78.77 78.77l-36.898 36.898zm-137.16 176.46c-64.921 0-118.07-52.812-118.07-118.07 0-65.099 52.986-118.07 118.07-118.07 65.086 0 118.07 52.975 118.07 118.07 0 65.086-52.976 118.07-118.07 118.07zm-137.16-176.46-36.898-36.898c18.218-33.145 45.625-60.552 78.77-78.77l36.898 36.898c-35.323 15.094-63.675 43.447-78.77 78.77zm0 116.77c15.094 35.323 43.447 63.676 78.77 78.77l-36.898 36.898c-33.145-18.218-60.552-45.625-78.77-78.77l36.898-36.898zm274.31 0 36.898 36.898c-18.217 33.145-45.625 60.552-78.77 78.77l-36.898-36.898c35.323-15.094 63.676-43.447 78.77-78.77zm15.733-242.09c16.99 0 30.813 13.822 30.813 30.812v15.523c-13.162-17.557-28.778-33.173-46.335-46.335h15.522zm-336.59 30.812c0-16.99 13.822-30.812 30.812-30.812h15.523c-17.558 13.162-33.173 28.778-46.335 46.335v-15.523zm30.811 336.59c-16.989 0-30.812-13.822-30.812-30.812v-15.522c13.162 17.557 28.778 33.172 46.335 46.334h-15.523zm336.59-30.812c0 16.99-13.822 30.812-30.813 30.812h-15.523c17.557-13.162 33.173-28.778 46.335-46.336v15.524z"/>
+              </svg>
+            </div>
+            <div class="flex-center">
+              <a href="/" role="button" draggable="false" class="vtt-menu-link">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half half-width-container vtt-body-section">
+    <h1 class="govuk-heading-l">Recently Viewed Articles</h1>
+    <ul class="govuk-body">
+      <li class="govuk-link">Contact us</li>
+      <li class="govuk-link">Who are Virgin Trains Ticketing?</li>
+      <li class="govuk-link">FAQs</li>
+    </ul>
+    </div>
+    <div class="govuk-grid-column-one-half half-width-container vtt-body-section vtt-body-section-border">
+    <h1 class="govuk-heading-l">Recent Activity</h1>
+    <ul class="govuk-body">
+      <li class="govuk-link">Can I add my tickets to my Apple Wallet?</li>
+      <li class="govuk-link">My E-Ticket/QR Code will not scan.</li>
+      <li class="govuk-link">Contact us</li>
+      <li class="govuk-link">Virgin Points</li>
+      <li class="govuk-link">Who are Virgin Trains Ticketing?</li>
+    </ul>
+    <div class="flex-end">
+      <a href="#" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+        See more
+      </a>
+    </div>
+  </div>
+
 {% endblock %}

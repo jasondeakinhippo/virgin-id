@@ -7943,6 +7943,11 @@ x:-moz-any-link {
   }
 }
 
+main.govuk-main-wrapper {
+  padding-top: 0px;
+  padding-top: none;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
