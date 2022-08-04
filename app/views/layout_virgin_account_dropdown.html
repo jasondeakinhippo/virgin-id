@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block headIcons %}
+  <link rel="shortcut icon" href="{{ asset_path }}images/virgin-logo.ico?0.18.3" type="image/x-icon" />
+{% endblock %}
+
+{% block head %}
+  <!--[if lte IE 8]><link hrpef="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if gt IE 8]><!--><link href="/public/stylesheets/styles_virgin_account_dropdown.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+  {% for stylesheetUrl in extensionConfig.stylesheets %}
+    <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+  {% endfor %}
+{% endblock %}
+
+{% block header %}
+<div class="virgin-header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Virgin-logo.svg" alt="Virgin logo" class="virgin-logo">
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__navigation">
+      <div class="govuk-footer__section govuk-grid-column-two-thirds">
+        <ul class="govuk-footer__list ">
+          <li class="">
+            <a class="govuk-footer__link" href="#1">
+              Help
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#2">
+             Cookies
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Contact
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Privacy
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Terms and conditions
+            </a>
+          </li>
+          <li class="">
+            <a class="govuk-footer__link" href="#3">
+             Accessibility statement
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="govuk-footer__section flex">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Virgin-logo.svg" alt="Virgin logo" class="virgin-logo">
+      <p>© Virgin 2022. All rights reserved.</p>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}

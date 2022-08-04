@@ -8067,121 +8067,38 @@ h3.govuk-heading-m.account-section-title {
 }
 
 body {
-  margin: 0px;
-  height: 100vh;
+  font-family: arial;
+  font-size: small;
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.item {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  background-color: grey;
+  text-align: center;
+  color: white;
+  overflow: wrap;
+  float: left;
 }
 
-.center a {
-  padding: 10px 20px;
-  background: #eee;
-  color: #111;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 5px;
+ul {
+  list-style-type: none;
+  margin-left: -25px;
 }
 
-#email-popup {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
-  display: none;
+li {
+  display: inline;
 }
 
-#email-popup .email-popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  padding: 10px 20px;
-  background: #eee;
-  border-radius: 15px;
+.filter-button {
+  width: 50px;
+  margin-bottom: 5px;
 }
 
-#email-popup a.close-email-popup {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-#email-popup:target {
-  display: block;
-}
-
-.apple-mail-icon {
-  height: 100px;
-  padding: 10px 0px;
-}
-
-.apple-message-icon {
-  height: 100px;
-  padding: 10px 0px;
-}
-
-.email-popup-title {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-#sms-popup {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
-  display: none;
-}
-
-#sms-popup .sms-popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  padding: 10px 20px;
-  background: #eee;
-  border-radius: 15px;
-}
-
-#sms-popup a.close-sms-popup {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-#sms-popup:target {
-  display: block;
-}
-
-.apple-mail-icon {
-  height: 100px;
-  padding: 10px 0px;
-}
-
-.sms-popup-title {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-a.close-sms-pop {
-  display: flex;
-  justify-content: flex-end;
+.filter-button:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
 }
