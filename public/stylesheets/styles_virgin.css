@@ -7994,6 +7994,7 @@ main.govuk-main-wrapper {
 .govuk-heading-xl {
   font-style: italic;
   color: #e10a0a;
+  margin-bottom: 100px;
 }
 
 .govuk-button {
@@ -8012,6 +8013,21 @@ main.govuk-main-wrapper {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
+}
+
+.govuk-button:hover {
+  background-color: rgb(225, 10, 10);
+}
+
+.button-white {
+  background-color: white;
+  color: rgb(225, 10, 10);
+  border: 1px solid lightgrey;
+}
+
+.button-white:hover {
+  background-color: white;
+  color: rgb(225, 10, 10);
 }
 
 .color-virgin-red {
@@ -8049,7 +8065,6 @@ h3.govuk-heading-m.account-section-title {
 }
 
 .full-width {
-  background-color: rgb(252, 230, 230);
   width: 100vw;
   position: relative;
   left: 50%;

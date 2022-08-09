@@ -1,0 +1,123 @@
+{% extends "layout_virgin.html" %}
+
+{% block pageTitle %}
+Virgin ID account | Create ID
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Build your profile</h1>
+      <p>Enter your personal details below.</p>
+        <form class="form" action="/url/of/next/page" method="post">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="name-on-the-account">
+              Country*
+            </label>
+            <input class="govuk-input" id="name-on-the-account" name="name-on-the-account" type="text" spellcheck="false" autocomplete="name" placeholder="United Kingdom">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort-code">
+              First name*
+            </label>
+            <input class="govuk-input" id="sort-code" name="sort-code" type="text" spellcheck="false" aria-describedby="sort-code-hint" pattern="[0-9]*" inputmode="numeric">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="account-number">
+              Last name*
+            </label>
+            <input class="govuk-input" id="account-number" name="account-number" type="text" spellcheck="false" aria-describedby="account-number-hint" pattern="[0-9]*" inputmode="numeric">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="roll-number">
+              Birthday (dd/mm/yyyy)*
+            </label>
+            <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+          </div>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="roll-number">
+              Postcode*
+            </label>
+            <input class="govuk-input" id="roll-number" name="roll-number" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+          </div>
+
+<h2 class="govuk-heading-l">Communication Preferences</h2>
+      <p>When you sign up to Virgin ID you can choose how all connected Virgin companies contact you.</p>
+      <p>Check the boxes if you'd prefer NOT to be contacted by:</p>
+        <form class="form" action="/url/of/next/page" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Email
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    SMS
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Telephone
+                  </label>
+                </div>
+              </div>
+          
+            </fieldset>
+            <br>
+            <p>You can always change these later in your Virgin ID account settings.</p>
+
+             <h2 class="govuk-heading-l">Terms and Conditions</h2>
+        <form class="form" action="/url/of/next/page" method="post">
+            <p>When you use Virgin ID, we use the information to make your experience better. This means sharing it with Virgin ID partners you've interacted with and getting information back from them.</p>
+            <p>Our <a href="create-id">Privacy Policy</a> tells you more about how we collect, use, share and protect your personal information.</p>
+            <p>We use the information to make your experience better and make your experience across the Virgin ecosystem smoother.</p>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes govuk-checkboxes-container" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    By ticking this box you're also agreeing to the <a href="terms-and-conditions">Virgin ID Terms and Conditions</a>.
+                  </label>
+                  </div>
+                  </div>
+            </fieldset>
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes govuk-checkboxes-container" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Automatically create me a Virgin Red account so I can start earning loyalty points. Find out more about <a href="../what-is-virgin-red">Virgin Red</a>.
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+          <a href="vtt-link" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+            Continue
+          </a>
+        </form>
+        <p>Need help? Contact customer support</p>
+      
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}

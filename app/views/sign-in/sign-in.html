@@ -1,0 +1,72 @@
+{% extends "layout_virgin.html" %}
+
+{% block pageTitle %}
+Virgin ID account | Sign in
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Virgin ID</h1>
+      <p>To join or login, enter your email address below</p>
+      <form class="form" action="/url/of/next/page" method="post">
+      <label class="govuk-label govuk-!-font-weight-bold" for="email-address">
+        Email address*
+      </label>
+      <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="example@email.com">
+      <a href="#email-popup" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+        Continue
+      </a>
+      </form>
+      <p>Need help? Contact customer support</p>
+    </div>
+  </div>
+  
+  <div class="full-width">
+    <form method="POST">
+  <div class="govuk-cookie-banner " data-nosnippet role="region" aria-label="Cookies on [name of service]">
+    <div class="govuk-cookie-banner__message govuk-width-container">
+
+      <div class="govuk-grid-row">
+        <div class="">
+          <h2 class="govuk-cookie-banner__heading govuk-heading-m">We use cookies to improve your experience with Virgin ID</h2>
+
+          <div class="govuk-cookie-banner__content">
+            <p class="govuk-body">You can read our full <a>Privacy Policy</a> and <a>Cookie Policy</a> which explains how we use cookies.</p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-button-group flex-center">
+        <button value="accept" type="submit" name="cookies" class="govuk-button" data-module="govuk-button">
+          Accept cookies
+        </button>
+        <button value="reject" type="submit" name="cookies" class="govuk-button button-white" data-module="govuk-button">
+          Customise
+        </button>
+      </div>
+    </div>
+  </div>
+
+</form>
+  </div>
+  <div id="email-popup">
+    <div class="email-popup-content">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          <img src="/public/images/apple-mail-icon.png" alt="Apple mail icon" class="apple-mail-icon">
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <p class="email-popup-title govuk-heading-m">Virgin ID</p>
+          <p class="govuk-body">Your Virgin ID verification code is <strong>123456</strong></p>
+          <a href="verify-email" class="close-email-popup">Close</a>
+        </div>
+      </div>
+      </div>    
+    </div>
+  </div>
+{% endblock %}

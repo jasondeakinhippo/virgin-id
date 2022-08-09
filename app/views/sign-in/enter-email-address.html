@@ -12,34 +12,36 @@ Virgin ID account | Sign in
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">Create Virgin ID</h1>
+      <h1 class="govuk-heading-xl">Virgin ID</h1>
       <p>To join or login, enter your email address below</p>
       <form class="form" action="/url/of/next/page" method="post">
       <label class="govuk-label govuk-!-font-weight-bold" for="email-address">
-        Email address
+        Email address*
       </label>
-      <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" placeholder="example@email.com">
-      <a href="#email-popup" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
+      <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="example@email.com">
+      <a href="#sms-popup" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
         Continue
       </a>
       </form>
       <p>Need help? Contact customer support</p>
     </div>
   </div>
-  <div id="email-popup">
-    <div class="email-popup-content">
+
+</form>
+  </div>
+   <div id="sms-popup">
+    <div class="sms-popup-content">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third">
-          <img src="/public/images/apple-mail-icon.png" alt="Apple mail icon" class="apple-mail-icon">
+          <img src="/public/images/apple-message-icon.png" alt="Apple message icon" class="apple-message-icon">
         </div>
         <div class="govuk-grid-column-two-thirds">
-          <p class="email-popup-title govuk-heading-m">Virgin ID</p>
-          <p class="govuk-body">Your Virgin ID verification code is <strong>205759</strong></p>
-          <a href="verify-email" class="close-email-popup">Close</a>
+          <p class="sms-popup-title govuk-heading-m">Virgin ID</p>
+          <p class="govuk-body">Your Virgin ID security code is <strong>123456</strong></p>
+          <a href="welcome-vtt" class="close-sms-popup">Close</a>
         </div>
       </div>
       </div>    
     </div>
   </div>
-
 {% endblock %}

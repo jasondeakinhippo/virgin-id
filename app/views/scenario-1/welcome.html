@@ -1,4 +1,4 @@
-{% extends "layout_vtt.html" %}
+{% extends "layout_vtt_sign_up.html" %}
 
 {% block pageTitle %}
   Virgin ID account | Welcome
@@ -8,7 +8,7 @@
  
   <div class="flex-row">
      <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
-      <a class="logout-link" href="../index">Log out</a>
+      <a class="govuk-link log-out" href="../index">Log out</a>
   </div>
  
 {% endblock %}
@@ -16,6 +16,6 @@
 {% block content %}
   <div class="govuk-width-container ">
     <h1 class="govuk-heading-xl">Welcome to Virgin Trains Ticketing</h1>
-    <p>You are now able to start exploring your <a href="account">Virgin ID account!</a></p>
+    <p>You are now able to start exploring your <a href="../account/index">Virgin ID account!</a></p>
   </div>
 {% endblock %}

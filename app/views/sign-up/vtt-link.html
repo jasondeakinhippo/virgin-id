@@ -1,0 +1,48 @@
+{% extends "layout_vtt_sign_up.html" %}
+
+{% block pageTitle %}
+  Virgin ID account | Welcome
+{% endblock %}
+
+{% block beforeContent %}
+ 
+  <div class="flex-row">
+     <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+      <a class="govuk-link log-out" href="../sign-in/welcome-vtt">Log out</a>
+  </div>
+ 
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container ">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Share your details with Virgin Trains Ticketing</h1>
+        </div>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <div class="flex-center">
+              <img draggable="false" src="https://theme.zdassets.com/theme_assets/693244/fcdb70c1ed434acce249b92cdffb4436593e27d1.png" alt="Virgin Red logo" class="virgin-logo virgin-red-logo" style="height: 140px">
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-row">
+          <p>To get you signed in smoothly Virgin Trains Ticketing requests some of the personal details from your Virgin ID.</p>
+          <p>Would you like to share these details with Virgin Trains Ticketing?</p>
+        </div>
+        <div class="govuk-grid-row flex-center">
+          <div class="flex-column govuk-grid-column-one-quarter">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+          <button class="govuk-button govuk-button--secondary button-white" data-module="govuk-button">
+            <div class="red-text">Save as draft</div>
+          </button>
+        </div>
+        </div>
+        <div class="govuk-grid-row">
+          <p>Need help? Contact customer support</p>
+        </div>
+      </div>
+  </div>
+{% endblock %}

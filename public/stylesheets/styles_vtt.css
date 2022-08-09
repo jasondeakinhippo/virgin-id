@@ -7956,6 +7956,16 @@ main#main-content.govuk-main-wrapper.govuk-main-wrapper--auto-spacing {
   border-bottom: none;
 }
 
+.govuk-heading-xl {
+  font-style: italic;
+  color: #e10a0a;
+}
+
+.govuk-link.log-out {
+  color: #e10a0a !important;
+  font-weight: bold;
+}
+
 .govuk-button {
   background-color: rgb(225, 10, 10);
   color: white;
@@ -7992,40 +8002,15 @@ main#main-content.govuk-main-wrapper.govuk-main-wrapper--auto-spacing {
   letter-spacing: normal;
 }
 
-.govuk-button-white {
+.button-white {
   background-color: white;
   color: rgb(225, 10, 10);
-  border: 1px solid rgb(225, 10, 10);
-  box-shadow: none;
-  font-size: 16px;
-  font-family: Barlow, sans-serif;
-  line-height: 24px;
-  padding: 12px 24px;
-  display: inline-block;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
+  border: 1px solid lightgrey;
 }
 
-.govuk-button-white {
+.button-white:hover {
   background-color: white;
   color: rgb(225, 10, 10);
-  border: 1px solid rgb(225, 10, 10);
-  box-shadow: none;
-  font-size: 16px;
-  font-family: Barlow, sans-serif;
-  line-height: 24px;
-  padding: 12px 24px;
-  display: inline-block;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
 }
 
 .full-width-red {
@@ -8132,4 +8117,10 @@ main#main-content.govuk-main-wrapper.govuk-main-wrapper--auto-spacing {
 
 li.govuk-link::marker {
   color: black;
+}
+
+button.govuk-button.govuk-button--secondary.white-button::before {
+  background-color: white;
+  border: 2px solid #e10a0a;
+  border-radius: 6px;
 }
