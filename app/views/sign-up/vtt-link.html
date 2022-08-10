@@ -8,7 +8,6 @@
  
   <div class="flex-row">
      <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
-      <a class="govuk-link log-out" href="../sign-in/welcome-vtt">Log out</a>
   </div>
  
 {% endblock %}
@@ -32,9 +31,9 @@
         </div>
         <div class="govuk-grid-row flex-center">
           <div class="flex-column govuk-grid-column-one-quarter">
-            <button class="govuk-button" data-module="govuk-button">
+            <a href="welcome-vtt" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8  govuk-button--warning"  data-module="govuk-button">
               Save and continue
-            </button>
+            </a>
           <button class="govuk-button govuk-button--secondary button-white" data-module="govuk-button">
             <div class="red-text">Save as draft</div>
           </button>

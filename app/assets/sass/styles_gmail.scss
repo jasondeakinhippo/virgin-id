@@ -1,0 +1,77 @@
+// The unbranded stylesheet is used if you need to create pages in your
+// prototype without the GOV.UK branding.
+//
+// See localhost:3000/docs/templates/blank-unbranded
+
+// Import settings first so we can override them before importing all of GOV.UK Frontend
+// If you need to enable compatibility mode or the legacy palette, do that *before* this import.
+@import "node_modules/govuk-frontend/govuk/settings/all";
+
+// Override the default GOV.UK Frontend font stack
+$govuk-font-family: "Barlow", sans-serif;
+
+// Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
+$govuk-canvas-background-colour: $govuk-body-background-colour;
+
+@import "application";
+main.govuk-main-wrapper {
+    padding-top: 0px;
+    padding-top: none;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.align-center {
+
+}
+.govuk-grid-row .full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -40px !important;
+}
+.padding-top-20 {
+    padding-top: 20px;
+}
+.gmail-search-bar {
+    height: 70px;
+    border-radius: 5px;
+    width: 900px;
+    padding: 20px;
+    background: #eef3fc;
+    border: none;
+    padding: 9px 4px 9px 40px;
+    background: #eef3fc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+.gmail-avatar-container {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.gmail-avatar {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background: darkgrey;
+}
