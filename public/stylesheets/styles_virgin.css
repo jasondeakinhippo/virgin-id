@@ -8209,3 +8209,7 @@ a.close-sms-pop {
 .govuk-checkboxes-container {
   vertical-align: middle;
 }
+
+.govuk-cookie-banner-padding {
+  padding: 30px;
+}
